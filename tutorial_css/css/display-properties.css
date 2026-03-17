@@ -1,0 +1,13 @@
+/*
+Tutorial File: tutorial_css/css/display-properties.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.demo { border: 1px solid #444; background: #eef3ff; margin: 6px; }
+.block { display: block; padding: 8px; }
+.inline { display: inline; padding: 3px; }
+.inline-block { display: inline-block; width: 220px; padding: 8px; }
+.hidden { display: none; }

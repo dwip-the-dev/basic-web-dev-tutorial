@@ -1,0 +1,20 @@
+/*
+Tutorial File: tutorial_css/css/icons.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.icons-row { display: flex; gap: 12px; }
+.icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e9f2ff;
+    border: 1px solid #6ea8fe;
+    font-size: 24px;
+}

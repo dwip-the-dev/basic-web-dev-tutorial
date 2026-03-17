@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_css/css-combinators.html
+Lesson Title: CSS Combinators Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Tutorial</title>
+    <link rel="stylesheet" href="css/combinators.css">
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <h1>CSS Combinators</h1>
+    <p>Combinators describe relationships between selectors.</p>
+    <div class="parent">
+        <p>Child paragraph (selected by <code>div > p</code>)</p>
+        <section>
+            <p>Descendant paragraph (selected by <code>div p</code>)</p>
+        </section>
+    </div>
+    <h3>Heading 1</h3>
+    <p>Adjacent sibling paragraph (selected by <code>h3 + p</code>)</p>
+    <p>General sibling paragraph (selected by <code>h3 ~ p</code>)</p>
+</body>
+</html>

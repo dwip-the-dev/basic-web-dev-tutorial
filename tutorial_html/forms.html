@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/forms.html
+Lesson Title: HTML Forms Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Tutorial</title>
+
+    <!-- Small CSS for clarity -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 130px;
+        }
+
+        fieldset {
+            margin-bottom: 14px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- Main heading -->
+    <h1>HTML Forms (Beginner Friendly)</h1>
+
+    <!-- Intro paragraph -->
+    <p>
+        Forms collect user input (text, choices, files, etc.) and send it to a server.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1) BASIC FORM STRUCTURE
+         ===================================================== -->
+    <h2>1) Basic Form</h2>
+
+    <!--
+        <form> attributes:
+        action = where submitted data is sent
+        method = how data is sent (GET or POST)
+    -->
+    <form action="/submit" method="post">
+        <div class="row">
+            <!-- label "for" should match input "id" for accessibility -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
+        </div>
+
+        <div class="row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+
+        <div class="row">
+            <!-- submit sends form data -->
+            <button type="submit">Submit Form</button>
+            <!-- reset clears fields back to defaults -->
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- =====================================================
+         2) COMMON INPUT TYPES
+         ===================================================== -->
+    <h2>2) Common Input Types</h2>
+
+    <form action="#" method="get">
+        <div class="row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div class="row">
+            <label for="age">Number:</label>
+            <input type="number" id="age" name="age" min="1" max="120">
+        </div>
+
+        <div class="row">
+            <label for="birthday">Date:</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div class="row">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div class="row">
+            <label for="website">URL:</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+        </div>
+
+        <div class="row">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search">
+        </div>
+
+        <div class="row">
+            <label for="resume">File:</label>
+            <input type="file" id="resume" name="resume">
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <hr>
+
+    <!-- =====================================================
+         3) RADIO, CHECKBOX, SELECT, TEXTAREA
+         ===================================================== -->
+    <h2>3) Choice Inputs</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Choose one course (radio):</legend>
+            <!-- Radio buttons with same name become one group -->
+            <input type="radio" id="html" name="course" value="html">
+            <label for="html">HTML</label>
+
+            <input type="radio" id="css" name="course" value="css">
+            <label for="css">CSS</label>
+
+            <input type="radio" id="js" name="course" value="js">
+            <label for="js">JavaScript</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select skills (checkbox):</legend>
+            <!-- Checkboxes allow multiple selections -->
+            <input type="checkbox" id="skill1" name="skills" value="git">
+            <label for="skill1">Git</label>
+
+            <input type="checkbox" id="skill2" name="skills" value="react">
+            <label for="skill2">React</label>
+
+            <input type="checkbox" id="skill3" name="skills" value="node">
+            <label for="skill3">Node.js</label>
+        </fieldset>
+
+        <div class="row">
+            <label for="country">Country:</label>
+            <!-- Select dropdown -->
+            <select id="country" name="country">
+                <option value="">-- Select --</option>
+                <option value="in">India</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="message">Message:</label>
+            <!-- Textarea for multi-line text -->
+            <textarea id="message" name="message" rows="4" cols="30" placeholder="Type your message..."></textarea>
+        </div>
+
+        <button type="submit">Submit Choices</button>
+    </form>
+
+    <hr>
+
+    <!-- =====================================================
+         4) VALIDATION ATTRIBUTES
+         ===================================================== -->
+    <h2>4) Validation Attributes</h2>
+
+    <form action="#" method="post">
+        <div class="row">
+            <label for="username">Username:</label>
+            <!-- required: must be filled -->
+            <input type="text" id="username" name="username" required minlength="3" maxlength="12">
+        </div>
+
+        <div class="row">
+            <label for="phone">Phone:</label>
+            <!-- pattern: custom format check (example: 10 digits) -->
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number">
+        </div>
+
+        <div class="row">
+            <label for="readonly-demo">Read-only:</label>
+            <input type="text" id="readonly-demo" value="Cannot edit this" readonly>
+        </div>
+
+        <div class="row">
+            <label for="disabled-demo">Disabled:</label>
+            <input type="text" id="disabled-demo" value="Disabled input" disabled>
+        </div>
+
+        <button type="submit">Validate and Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- =====================================================
+         5) GET VS POST QUICK NOTE
+         ===================================================== -->
+    <h2>5) GET vs POST</h2>
+    <p><strong>GET:</strong> sends data in URL (good for search/filter forms).</p>
+    <p><strong>POST:</strong> sends data in request body (better for sensitive/large data).</p>
+
+    <hr>
+
+    <!-- Final tip -->
+    <p>
+        Tip: Always connect <code>&lt;label for="..."&gt;</code> with input <code>id</code>.
+        It improves accessibility and makes forms easier to click/use.
+    </p>
+</body>
+</html>

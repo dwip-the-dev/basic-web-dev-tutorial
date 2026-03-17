@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/buttons.html
+Lesson Title: HTML Buttons Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Buttons Tutorial</title>
+
+    <!-- Small CSS to make examples easier to see -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        .demo-row {
+            margin-bottom: 14px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 12px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- Main heading -->
+    <h1>HTML Buttons (Beginner Friendly)</h1>
+
+    <!-- Intro -->
+    <p>
+        Buttons let users do actions like submit forms, reset forms, or trigger JavaScript.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1) BASIC BUTTON
+         ===================================================== -->
+    <h2>1) Basic &lt;button&gt;</h2>
+
+    <!-- Simple clickable button -->
+    <div class="demo-row">
+        <button>Click Me</button>
+    </div>
+
+    <!-- By default, button text is what users see on screen -->
+    <p>Tip: Text inside <code>&lt;button&gt;...&lt;/button&gt;</code> is the button label.</p>
+
+    <hr>
+
+    <!-- =====================================================
+         2) BUTTON TYPES
+         ===================================================== -->
+    <h2>2) Button Types</h2>
+
+    <!--
+        type="button" -> general-purpose button (safe default outside forms)
+        type="submit" -> submits form data
+        type="reset"  -> resets form fields to default values
+    -->
+    <div class="box">
+        <div class="demo-row"><button type="button">type="button"</button></div>
+        <div class="demo-row"><button type="submit">type="submit"</button></div>
+        <div class="demo-row"><button type="reset">type="reset"</button></div>
+    </div>
+
+    <p>
+        Important: Inside a form, if you do not set <code>type</code>, many browsers treat it as
+        <code>submit</code>.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         3) DISABLED BUTTON
+         ===================================================== -->
+    <h2>3) Disabled Button</h2>
+
+    <!-- disabled attribute makes button unclickable -->
+    <div class="demo-row">
+        <button type="button" disabled>Disabled Button</button>
+    </div>
+
+    <hr>
+
+    <!-- =====================================================
+         4) BUTTON WITH ICON/TEXT MIX
+         ===================================================== -->
+    <h2>4) Button Content</h2>
+
+    <!-- Button can contain text + inline elements like <span> -->
+    <div class="demo-row">
+        <button type="button"><span aria-hidden="true">★</span> Save Favorite</button>
+    </div>
+
+    <hr>
+
+    <!-- =====================================================
+         5) BUTTON AS LINK STYLE VS REAL LINK
+         ===================================================== -->
+    <h2>5) Button vs Link</h2>
+
+    <!-- Use button for actions, use <a> for navigation -->
+    <p>
+        Use <code>&lt;button&gt;</code> for actions (submit, open modal, run JS).
+        Use <code>&lt;a href="..."&gt;</code> for moving to another page.
+    </p>
+
+    <!-- Example link next to button -->
+    <div class="demo-row">
+        <button type="button">Action Button</button>
+        <a href="index.html">Go to Home (Link)</a>
+    </div>
+
+    <hr>
+
+    <!-- =====================================================
+         6) BUTTON ATTRIBUTES QUICK LIST
+         ===================================================== -->
+    <h2>6) Common Button Attributes</h2>
+    <p><code>type</code>: defines button behavior.</p>
+    <p><code>disabled</code>: disables user interaction.</p>
+    <p><code>name</code> and <code>value</code>: useful when button is part of form submission.</p>
+    <p><code>autofocus</code>: focuses button automatically when page loads (use carefully).</p>
+
+    <!-- Example with name/value/autofocus -->
+    <div class="demo-row">
+        <button type="button" name="action" value="save" autofocus>Autofocus Example</button>
+    </div>
+
+    <hr>
+
+    <!-- Final tip -->
+    <p>
+        Tip: Always set <code>type</code> explicitly on buttons to avoid accidental form submission.
+    </p>
+</body>
+</html>

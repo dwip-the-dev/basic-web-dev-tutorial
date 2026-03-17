@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/video.html
+Lesson Title: Video Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- Character encoding for readable text -->
+    <meta charset="UTF-8">
+    <!-- Helps the page scale correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
+    <title>Video Tutorial</title>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- First video example:
+         controls = show built-in video controls
+         autoplay = try to start automatically
+         muted = start silently (often needed for autoplay)
+         height = fixed display height in pixels -->
+    <video controls autoplay muted  height="518">
+        <!-- Main video file source -->
+        <source src="../assets/vid1.mp4" type="video/mp4">
+        <!-- Fallback text if <video> is not supported -->
+        Your browser does not support the video element.
+    </video>
+
+    <!-- Separator between first and second examples -->
+    <hr>
+
+    <!-- Second video example with similar settings -->
+    <video controls autoplay muted  height="518">
+        <!-- Another MP4 file from the assets folder -->
+        <source src="../assets/vid2.mp4" type="video/mp4">
+        <!-- Fallback text if <video> is not supported -->
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>

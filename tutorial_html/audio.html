@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/audio.html
+Lesson Title: Audio Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<!-- Root HTML element. lang=\"en\" helps browser/screen readers understand language. -->
+<html lang="en">
+<head>
+    <!-- Tells the browser which character set to use (UTF-8 supports most languages/symbols) -->
+    <meta charset="UTF-8">
+    <!-- Makes the page responsive on phones/tablets by matching screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Text shown on the browser tab -->
+    <title>Audio Tutorial</title>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- First audio example:
+         controls = show play/pause/volume UI
+         autoplay = try to play automatically on page load
+         muted = start with no sound (often required for autoplay)
+         loop = replay after finishing -->
+    <audio controls autoplay muted loop>
+        <!-- The browser tries sources top-to-bottom until one works -->
+        <source src="../assets/Catch Me If I Fall.mp3" type="audio/mpeg">
+        <source src="../assets/Catch Me If I Fall.wav" type="audio/wav">
+        <!-- Fallback text shown only if <audio> is not supported -->
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Horizontal rule to visually separate examples -->
+    <hr>
+
+    <!-- Second audio example:
+         controls = show player UI
+         loop = replay forever -->
+    <audio controls loop>
+        <!-- Same idea: provide one or more formats -->
+        <source src="../assets/horizons.mp3" type="audio/mpeg">
+        <source src="../assets/horizons.mp3" type="audio/wav">
+        <!-- Fallback text if audio tag is unsupported -->
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

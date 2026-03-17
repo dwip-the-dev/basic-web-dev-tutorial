@@ -1,0 +1,91 @@
+/*
+Tutorial File: tutorial_css/assets/css/tutorial.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+:root {
+    --bg: #0c111b;
+    --panel: #141c2e;
+    --panel-soft: #1b2741;
+    --text: #eaf0ff;
+    --muted: #9fb1de;
+    --accent: #7cc4ff;
+    --ok: #7be495;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    background: linear-gradient(145deg, var(--bg), #0a0f1a);
+}
+.container { max-width: 980px; margin: 0 auto; padding: 24px 16px 46px; }
+.card {
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.badge {
+    background: var(--panel-soft);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 999px;
+    padding: 4px 9px;
+    font-size: .82rem;
+}
+pre {
+    margin: 0;
+    overflow-x: auto;
+    background: #090e19;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 10px;
+    padding: 12px;
+}
+.code-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+button {
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: var(--text);
+    background: #223355;
+}
+button:hover { background: #2c4170; }
+.preview {
+    margin-top: 10px;
+    min-height: 44px;
+    border-left: 4px solid var(--ok);
+    background: rgba(123,228,149,.08);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.small { color: var(--muted); font-size: .92rem; }
+.search {
+    width: 100%;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 10px;
+    padding: 10px;
+    background: #0e1423;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+.list-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+.list-links a {
+    display: block;
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 10px;
+    padding: 10px;
+}

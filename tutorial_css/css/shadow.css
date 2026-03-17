@@ -1,0 +1,13 @@
+/*
+Tutorial File: tutorial_css/css/shadow.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.card { width: 260px; padding: 18px; margin: 12px 0; background: #fff; border-radius: 8px; }
+/* x-offset y-offset blur spread color */
+.soft { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18); }
+.hard { box-shadow: 6px 6px 0 #333; }
+.title { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35); }

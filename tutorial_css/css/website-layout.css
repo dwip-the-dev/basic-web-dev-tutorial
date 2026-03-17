@@ -1,0 +1,24 @@
+/*
+Tutorial File: tutorial_css/css/website-layout.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.layout {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        'header header'
+        'nav nav'
+        'main aside'
+        'footer footer';
+}
+.layout > * { padding: 16px; border-radius: 8px; color: #fff; }
+header { grid-area: header; background: #0d6efd; }
+nav { grid-area: nav; background: #6c757d; }
+main { grid-area: main; background: #198754; min-height: 140px; }
+aside { grid-area: aside; background: #fd7e14; }
+footer { grid-area: footer; background: #343a40; }

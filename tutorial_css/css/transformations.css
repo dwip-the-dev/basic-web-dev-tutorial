@@ -1,0 +1,14 @@
+/*
+Tutorial File: tutorial_css/css/transformations.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.row { display: flex; gap: 18px; flex-wrap: wrap; }
+.box { width: 120px; height: 80px; background: #6f42c1; color: #fff; display: flex; align-items: center; justify-content: center; }
+.translate { transform: translate(10px, 8px); }
+.rotate { transform: rotate(-10deg); }
+.scale { transform: scale(1.15); }
+.skew { transform: skew(-10deg, 0deg); }

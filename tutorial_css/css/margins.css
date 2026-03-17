@@ -1,0 +1,13 @@
+/*
+Tutorial File: tutorial_css/css/margins.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.outer { border: 1px solid #bbb; padding: 10px; }
+.item { background: #e9f2ff; border: 1px solid #5b8def; padding: 10px; }
+.one { margin: 10px; }
+.two { margin: 20px 40px; }
+.center { width: 260px; margin: 0 auto; }

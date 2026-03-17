@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/text-formatting.html
+Lesson Title: Text Formatting Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- UTF-8 supports most characters/symbols -->
+    <meta charset="UTF-8">
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
+    <title>Text Formatting Tutorial</title>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- Main page heading -->
+    <h1>HTML Text Formatting (Beginner Friendly)</h1>
+
+    <!-- Intro paragraph -->
+    <p>
+        This page shows common HTML text formatting tags.
+        Each example is commented so you can learn what every tag does.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         BASIC VISUAL FORMATTING
+         ===================================================== -->
+    <h2>1) Basic Formatting</h2>
+
+    <!-- <b> makes text bold (visual only, no extra meaning) -->
+    <p><b>This text is bold using &lt;b&gt;.</b></p>
+
+    <!-- <strong> also looks bold, but adds importance (semantic meaning) -->
+    <p><strong>This text is important using &lt;strong&gt;.</strong></p>
+
+    <!-- <i> makes text italic (visual style) -->
+    <p><i>This text is italic using &lt;i&gt;.</i></p>
+
+    <!-- <em> usually italic + emphasizes meaning (semantic emphasis) -->
+    <p><em>This text is emphasized using &lt;em&gt;.</em></p>
+
+    <!-- <u> underlines text -->
+    <p><u>This text is underlined using &lt;u&gt;.</u></p>
+
+    <!-- <mark> highlights text -->
+    <p><mark>This text is highlighted using &lt;mark&gt;.</mark></p>
+
+    <!-- <small> shows smaller text -->
+    <p><small>This text is smaller using &lt;small&gt;.</small></p>
+
+    <hr>
+
+    <!-- =====================================================
+         EDITING-STYLE / CHANGE MARKUP
+         ===================================================== -->
+    <h2>2) Editing-Style Tags</h2>
+
+    <!-- <del> means deleted/removed text (usually shown with strike-through) -->
+    <p>Old price: <del>$100</del></p>
+
+    <!-- <ins> means inserted/added text (usually underlined) -->
+    <p>New price: <ins>$70</ins></p>
+
+    <!-- Combined example -->
+    <p>We changed <del>teh</del> to <ins>the</ins>.</p>
+
+    <hr>
+
+    <!-- =====================================================
+         SCIENCE / MATH / SPECIAL POSITIONS
+         ===================================================== -->
+    <h2>3) Subscript and Superscript</h2>
+
+    <!-- <sub> moves text lower (chemical formulas, footnotes) -->
+    <p>Water formula: H<sub>2</sub>O</p>
+
+    <!-- <sup> moves text higher (exponents, ordinal numbers) -->
+    <p>Math example: 2<sup>3</sup> = 8</p>
+
+    <hr>
+
+    <!-- =====================================================
+         CODE-RELATED FORMATTING
+         ===================================================== -->
+    <h2>4) Code and Keyboard Tags</h2>
+
+    <!-- <code> represents inline code -->
+    <p>Use <code>console.log("Hello")</code> to print in JavaScript.</p>
+
+    <!-- <kbd> represents keyboard input from user -->
+    <p>Save file with <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+
+    <!-- <samp> represents sample output from a program -->
+    <p>Program output: <samp>Build completed successfully.</samp></p>
+
+    <!-- <var> represents a variable name -->
+    <p>Formula: <var>x</var> + <var>y</var> = <var>z</var></p>
+
+    <!-- <pre> keeps spaces and line breaks exactly as typed -->
+    <pre>
+function greet(name) {
+    return "Hello " + name;
+}
+    </pre>
+
+    <hr>
+
+    <!-- =====================================================
+         QUOTES / REFERENCES
+         ===================================================== -->
+    <h2>5) Quotes and Citations</h2>
+
+    <!-- <q> is for short inline quotations -->
+    <p>He said, <q>Practice every day.</q></p>
+
+    <!-- <blockquote> is for longer quoted sections -->
+    <blockquote cite="https://example.com">
+        Learning by building small projects is one of the fastest ways to improve.
+    </blockquote>
+
+    <!-- <cite> marks the title of a creative work (book, movie, article, etc.) -->
+    <p>My favorite book is <cite>Clean Code</cite>.</p>
+
+    <hr>
+
+    <!-- =====================================================
+         SEMANTIC TEXT HELPERS
+         ===================================================== -->
+    <h2>6) Semantic Helper Tags</h2>
+
+    <!-- <abbr> is abbreviation; title appears as tooltip -->
+    <p><abbr title="HyperText Markup Language">HTML</abbr> is the language of web pages.</p>
+
+    <!-- <dfn> marks a defining term -->
+    <p><dfn>Element</dfn> means a complete HTML tag structure in the page.</p>
+
+    <!-- <time> represents a date/time in machine-readable format -->
+    <p>Class starts on <time datetime="2026-03-20">March 20, 2026</time>.</p>
+
+    <!-- <address> usually for contact information -->
+    <address>
+        Written by Dwip<br>
+        Email: dwip@dwip.dedyn.io
+    </address>
+
+    <hr>
+
+    <!-- =====================================================
+         DIRECTION / ISOLATION (ADVANCED BUT USEFUL)
+         ===================================================== -->
+    <h2>7) Text Direction Tags</h2>
+
+    <!-- <bdi> isolates a part of text that may have different direction -->
+    <p>User: <bdi>dwip123</bdi></p>
+
+    <!-- <bdo> overrides text direction -->
+    <p><bdo dir="rtl">This text is displayed right-to-left.</bdo></p>
+
+    <hr>
+
+    <!-- =====================================================
+         DEPRECATED TAGS (AVOID IN NEW PROJECTS)
+         ===================================================== -->
+    <h2>8) Deprecated/Old Tags (For Knowledge)</h2>
+    <!-- These tags are old and should usually be replaced with CSS or modern tags -->
+    <p><s>This uses &lt;s&gt; for text that is no longer accurate.</s></p>
+    <p>
+        Avoid old tags like <code>&lt;font&gt;</code>, <code>&lt;center&gt;</code>,
+        <code>&lt;big&gt;</code>, <code>&lt;tt&gt;</code>, and <code>&lt;strike&gt;</code>
+        in modern HTML.
+    </p>
+
+    <hr>
+
+    <!-- Final note -->
+    <p>
+        Tip: Prefer semantic tags like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>
+        when meaning matters, and use CSS for visual design.
+    </p>
+</body>
+</html>

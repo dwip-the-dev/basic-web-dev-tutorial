@@ -1,0 +1,115 @@
+/*
+Tutorial File: tutorial_javascript/assets/css/tutorial.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+:root {
+    --bg: #0c1220;
+    --panel: #141d33;
+    --panel-soft: #1a2644;
+    --text: #eaf0ff;
+    --muted: #9fb1de;
+    --accent: #4cc9f0;
+    --ok: #77dd77;
+    --warn: #ffd166;
+}
+
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, var(--bg), #0a0f1c);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.container { max-width: 980px; margin: 0 auto; padding: 24px 16px 48px; }
+.card {
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.badge {
+    background: var(--panel-soft);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 999px;
+    padding: 4px 9px;
+    font-size: 0.82rem;
+}
+
+pre {
+    margin: 0;
+    overflow-x: auto;
+    background: #090d19;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+button {
+    cursor: pointer;
+    background: #233256;
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+button:hover { background: #2d3f6a; }
+
+.output {
+    margin-top: 10px;
+    min-height: 38px;
+    border-left: 4px solid var(--ok);
+    background: rgba(119,221,119,0.08);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
+}
+
+.small { color: var(--muted); font-size: 0.9rem; }
+
+.list-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.list-links a {
+    display: block;
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    background: #0d1324;
+    color: var(--text);
+    margin-bottom: 12px;
+}

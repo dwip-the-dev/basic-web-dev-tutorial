@@ -1,0 +1,12 @@
+/*
+Tutorial File: tutorial_css/css/overflow.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.box { width: 320px; height: 70px; border: 2px solid #444; padding: 8px; margin: 10px 0; }
+.hidden { overflow: hidden; }
+.scroll { overflow: scroll; }
+.auto { overflow: auto; }

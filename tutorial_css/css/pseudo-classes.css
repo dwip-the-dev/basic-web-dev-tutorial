@@ -1,0 +1,15 @@
+/*
+Tutorial File: tutorial_css/css/pseudo-classes.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.btn { display: inline-block; background: #0d6efd; color: #fff; padding: 8px 12px; text-decoration: none; border-radius: 6px; }
+.btn:hover { background: #0b5ed7; }
+.btn:active { transform: translateY(1px); }
+ul li:first-child { font-weight: 700; }
+ul li:last-child { color: #dc3545; }
+ul li:nth-child(even) { background: #f3f6ff; }
+input:focus { outline: 3px solid #86b7fe; border-color: #0d6efd; }

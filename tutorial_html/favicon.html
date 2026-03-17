@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/favicon.html
+Lesson Title: Favicon Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Tutorial</title>
+
+    <!--
+         FAVICON BASICS
+         A favicon is the small icon shown in:
+         - browser tabs
+         - bookmarks
+         - history
+         - some mobile shortcuts
+    -->
+
+    <!-- Most common and widely supported favicon setup (.ico) -->
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <!-- Legacy syntax used by older browsers (still safe to include) -->
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <!--
+         OPTIONAL MODERN FORMATS (UNCOMMENT IF YOU CREATE FILES)
+        
+         PNG favicon (modern browsers):
+         <link rel="icon" href="../assets/favicon-32x32.png" sizes="32x32" type="image/png">
+         <link rel="icon" href="../assets/favicon-16x16.png" sizes="16x16" type="image/png">
+
+         SVG favicon (very sharp on all screen sizes):
+         <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+         Apple iPhone/iPad home screen icon:
+         <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
+
+         Web app manifest (PWA icons + app settings):
+         <link rel="manifest" href="../assets/site.webmanifest">
+
+         Safari pinned tab icon (macOS Safari):
+         <link rel="mask-icon" href="../assets/safari-pinned-tab.svg" color="#1f6feb">
+
+         Theme color for mobile browser UI:
+         <meta name="theme-color" content="#ffffff">
+
+         Different icons for light vs dark mode:
+         <link rel="icon" href="../assets/favicon-light.svg" media="(prefers-color-scheme: light)" type="image/svg+xml">
+         <link rel="icon" href="../assets/favicon-dark.svg" media="(prefers-color-scheme: dark)" type="image/svg+xml">
+
+         Cache-busting trick when you update icons:
+         <link rel="icon" href="../assets/favicon.ico?v=2" type="image/x-icon">
+    -->
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- Main heading for this tutorial page -->
+    <h1>Favicon Tutorial (Beginner Friendly)</h1>
+
+    <!-- Explanation paragraph -->
+    <p>
+        This page uses <code>assets/favicon.ico</code> as the active favicon.
+        Open this file in a browser tab and you should see the icon on the tab.
+    </p>
+
+    <!-- Horizontal separator -->
+    <hr>
+
+    <!-- Beginner checklist -->
+    <h2>Quick Checklist</h2>
+    <p>1. Keep at least one <code>.ico</code> file for compatibility.</p>
+    <p>2. Add PNG/SVG versions for modern quality and flexibility.</p>
+    <p>3. Add Apple touch icon and manifest if building a web app/PWA.</p>
+    <p>4. If icon changes do not appear, use cache-busting like <code>?v=2</code>.</p>
+</body>
+</html>

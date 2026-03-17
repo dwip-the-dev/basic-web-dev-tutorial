@@ -1,0 +1,16 @@
+/*
+Tutorial File: tutorial_css/css/combinators.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+/* Descendant combinator (space): all p inside .parent */
+.parent p { color: #0b5ed7; }
+/* Child combinator (>): only direct child p */
+.parent > p { font-weight: 700; }
+/* Adjacent sibling (+): first p immediately after h3 */
+h3 + p { background: #fff3cd; padding: 6px; }
+/* General sibling (~): all p siblings after h3 */
+h3 ~ p { border-left: 4px solid #198754; padding-left: 8px; }

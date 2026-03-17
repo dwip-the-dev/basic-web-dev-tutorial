@@ -1,0 +1,12 @@
+/*
+Tutorial File: tutorial_css/css/image-gallery.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+figure { margin: 0; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; background: #fff; }
+img { width: 100%; display: block; }
+figcaption { padding: 8px; text-align: center; background: #f8f9fa; }

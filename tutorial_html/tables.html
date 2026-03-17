@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/tables.html
+Lesson Title: HTML Tables Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Tutorial</title>
+
+    <!-- Small CSS so table structure is easy to see -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        table {
+            border-collapse: collapse; /* Merges touching borders into one line */
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #f2f2f2;
+        }
+
+        tfoot {
+            background-color: #fafafa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- Main heading -->
+    <h1>HTML Tables (Beginner Friendly)</h1>
+
+    <!-- Intro paragraph -->
+    <p>
+        Tables are used to show data in rows and columns.
+        Think of a spreadsheet: each row has cells, and each column has a category.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1) SIMPLE TABLE
+         ===================================================== -->
+    <h2>1) Basic Table Structure</h2>
+
+    <!--
+        <table> = whole table container
+        <tr>    = table row
+        <th>    = header cell (usually bold/heading)
+        <td>    = normal data cell
+    -->
+    <table>
+        <caption>Student Marks (Simple Table)</caption>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Dwip</td>
+            <td>HTML</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>CSS</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- =====================================================
+         2) TABLE WITH THEAD, TBODY, TFOOT
+         ===================================================== -->
+    <h2>2) Grouping Table Sections</h2>
+
+    <!--
+        <thead> = top header section
+        <tbody> = main body rows
+        <tfoot> = bottom summary row(s)
+        This makes structure clearer and improves accessibility/styling.
+    -->
+    <table>
+        <caption>Monthly Expenses</caption>
+        <thead>
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Internet</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>Electricity</td>
+                <td>$45</td>
+            </tr>
+            <tr>
+                <td>Groceries</td>
+                <td>$120</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>$195</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <!-- =====================================================
+         3) COLSPAN (MERGE COLUMNS)
+         ===================================================== -->
+    <h2>3) Colspan (One Cell Across Multiple Columns)</h2>
+
+    <!--
+        colspan="2" means this cell will occupy width of 2 columns.
+    -->
+    <table>
+        <caption>Colspan Example</caption>
+        <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Evening</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">Holiday (No classes)</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Math</td>
+            <td>Science</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- =====================================================
+         4) ROWSPAN (MERGE ROWS)
+         ===================================================== -->
+    <h2>4) Rowspan (One Cell Across Multiple Rows)</h2>
+
+    <!--
+        rowspan="2" means this cell will occupy height of 2 rows.
+    -->
+    <table>
+        <caption>Rowspan Example</caption>
+        <tr>
+            <th>Teacher</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Mr. Khan</td>
+            <td>HTML Basics</td>
+        </tr>
+        <tr>
+            <td>CSS Basics</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- =====================================================
+         5) COLGROUP / COL
+         ===================================================== -->
+    <h2>5) Styling Specific Columns</h2>
+
+    <!--
+        <colgroup> lets you style full columns at once.
+        Here:
+        - first column gets light yellow
+        - second and third columns get light blue
+    -->
+    <table>
+        <caption>Colgroup Example</caption>
+        <colgroup>
+            <col style="background-color: #fff8d6;">
+            <col span="2" style="background-color: #eaf3ff;">
+        </colgroup>
+        <tr>
+            <th>Course</th>
+            <th>Beginner</th>
+            <th>Advanced</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- =====================================================
+         6) ACCESSIBILITY TIP
+         ===================================================== -->
+    <h2>6) Accessibility Tip</h2>
+
+    <!--
+        Use <th> for headers and scope="col" / scope="row" when needed.
+        Screen readers use this to understand relationships between cells.
+    -->
+    <table>
+        <caption>Accessible Header Example</caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+        </tr>
+        <tr>
+            <th scope="row">Sara</th>
+            <td>22</td>
+        </tr>
+        <tr>
+            <th scope="row">Ravi</th>
+            <td>24</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Final beginner reminder -->
+    <p>
+        Tip: Use tables for tabular data only. Do not use tables to build page layout.
+        For page layout, use CSS (Flexbox/Grid).
+    </p>
+</body>
+</html>

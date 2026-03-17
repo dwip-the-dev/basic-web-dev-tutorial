@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/div-span.html
+Lesson Title: Div and Span Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Tutorial</title>
+
+    <!-- Small CSS just to visually show differences -->
+    <style>
+        /* Page styling so examples are easier to see */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        /* Box style for div examples */
+        .box {
+            border: 2px solid #333;
+            background-color: #f4f4f4;
+            padding: 12px;
+            margin-bottom: 12px;
+        }
+
+        /* Highlight style for span examples */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- Main heading -->
+    <h1>HTML Div and Span (Beginner Friendly)</h1>
+
+    <!-- Intro explanation -->
+    <p>
+        <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are container tags.
+        They help group content so you can style or organize it.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         DIV SECTION
+         ===================================================== -->
+    <h2>1) What is &lt;div&gt;?</h2>
+
+    <!-- div is a BLOCK-LEVEL element:
+         It starts on a new line and takes full available width by default -->
+    <div class="box">
+        This is the first <code>div</code> box.
+    </div>
+
+    <!-- Another div goes to the next line automatically -->
+    <div class="box">
+        This is the second <code>div</code> box.
+    </div>
+
+    <!-- Practical use: grouping a section -->
+    <div class="box">
+        <h3>Card Title</h3>
+        <p>This whole card is wrapped in one <code>div</code>.</p>
+    </div>
+
+    <hr>
+
+    <!-- =====================================================
+         SPAN SECTION
+         ===================================================== -->
+    <h2>2) What is &lt;span&gt;?</h2>
+
+    <!-- span is an INLINE element:
+         It stays inside the same line and only takes needed width -->
+    <p>
+        This is normal text, and
+        <span class="highlight">this part is inside a span</span>,
+        then normal text continues on the same line.
+    </p>
+
+    <!-- Another inline span example -->
+    <p>
+        Price: <span class="highlight">$49</span> only.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         DIV VS SPAN QUICK COMPARISON
+         ===================================================== -->
+    <h2>3) Div vs Span</h2>
+
+    <!-- Quick beginner summary -->
+    <p><strong>div</strong>: block-level container (new line, full width).</p>
+    <p><strong>span</strong>: inline container (same line, only needed width).</p>
+
+    <hr>
+
+    <!-- =====================================================
+         ID AND CLASS WITH DIV/SPAN
+         ===================================================== -->
+    <h2>4) Using class and id</h2>
+
+    <!-- class can be reused on many elements -->
+    <div class="box">
+        This div uses class <code>box</code> (reusable style).
+    </div>
+
+    <!-- id should be unique in one page -->
+    <p id="special-line">
+        This paragraph has an <code>id</code> called <code>special-line</code>.
+        IDs are often used for unique styling or JavaScript targeting.
+    </p>
+
+    <hr>
+
+    <!-- Final tip -->
+    <p>
+        Tip: Use <code>div</code> to structure bigger sections and
+        <code>span</code> to style small parts inside text.
+    </p>
+</body>
+</html>

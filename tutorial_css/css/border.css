@@ -1,0 +1,12 @@
+/*
+Tutorial File: tutorial_css/css/border.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.box { padding: 14px; margin: 10px 0; }
+.solid { border: 3px solid #0b6efd; }
+.dashed { border: 3px dashed #198754; }
+.rounded { border: 3px double #dc3545; border-radius: 12px; }

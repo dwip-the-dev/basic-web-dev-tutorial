@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+Tutorial File: tutorial_html/lists.html
+Lesson Title: HTML Lists Tutorial
+Purpose: This page is part of the course and is documented for beginners.
+-->
+<html lang="en">
+<head>
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists Tutorial</title>
+</head>
+<!-- Main visible page content starts here. -->
+<body>
+    <!-- Main heading -->
+    <h1>HTML Lists (Beginner Friendly)</h1>
+
+    <!-- Intro -->
+    <p>
+        HTML has 3 main list types:
+        unordered list, ordered list, and description list.
+    </p>
+
+    <hr>
+
+    <!-- =====================================================
+         1) UNORDERED LIST (BULLET LIST)
+         ===================================================== -->
+    <h2>1) Unordered List (&lt;ul&gt;)</h2>
+
+    <!-- <ul> creates a bullet-point list -->
+    <!-- <li> means list item (one row in the list) -->
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+    </ul>
+
+    <!-- You can change bullet style with CSS or type (type is old but still seen) -->
+    <p>Unordered list with another bullet style:</p>
+    <ul type="square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <!-- =====================================================
+         2) ORDERED LIST (NUMBERED LIST)
+         ===================================================== -->
+    <h2>2) Ordered List (&lt;ol&gt;)</h2>
+
+    <!-- <ol> creates a numbered list -->
+    <ol>
+        <li>Open your editor</li>
+        <li>Create an HTML file</li>
+        <li>Run it in browser</li>
+    </ol>
+
+    <!-- type controls numbering style: 1, A, a, I, i -->
+    <p>Ordered list with uppercase letters:</p>
+    <ol type="A">
+        <li>Install tools</li>
+        <li>Write code</li>
+        <li>Test code</li>
+    </ol>
+
+    <!-- start changes where numbering begins -->
+    <p>Ordered list starting from 5:</p>
+    <ol start="5">
+        <li>Step Five</li>
+        <li>Step Six</li>
+        <li>Step Seven</li>
+    </ol>
+
+    <!-- reversed counts backwards -->
+    <p>Reversed ordered list:</p>
+    <ol reversed>
+        <li>Third</li>
+        <li>Second</li>
+        <li>First</li>
+    </ol>
+
+    <hr>
+
+    <!-- =====================================================
+         3) DESCRIPTION LIST
+         ===================================================== -->
+    <h2>3) Description List (&lt;dl&gt;)</h2>
+
+    <!-- <dl> = description list -->
+    <!-- <dt> = term/title -->
+    <!-- <dd> = description/details for that term -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Used to structure web page content.</dd>
+
+        <dt>CSS</dt>
+        <dd>Used to style how the page looks.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Used to make the page interactive.</dd>
+    </dl>
+
+    <hr>
+
+    <!-- =====================================================
+         4) NESTED LISTS
+         ===================================================== -->
+    <h2>4) Nested Lists (List inside List)</h2>
+
+    <!-- You can place a list inside an <li> to create sub-items -->
+    <ul>
+        <li>Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>Backend
+            <ul>
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- Final tip -->
+    <p>
+        Tip: Use <code>&lt;ul&gt;</code> for bullet points,
+        <code>&lt;ol&gt;</code> for steps/order,
+        and <code>&lt;dl&gt;</code> for term + meaning.
+    </p>
+</body>
+</html>

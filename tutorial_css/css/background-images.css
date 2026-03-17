@@ -1,0 +1,25 @@
+/*
+Tutorial File: tutorial_css/css/background-images.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.hero {
+    color: #fff;
+    padding: 28px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../assets/image.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 180px;
+}
+.repeat-box {
+    margin-top: 16px;
+    border: 1px solid #999;
+    padding: 18px;
+    background-image: url('../assets/earth.gif');
+    background-size: 80px;
+    background-repeat: repeat;
+}

@@ -1,0 +1,13 @@
+/*
+Tutorial File: tutorial_css/css/fonts.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { padding: 20px; }
+.serif { font-family: Georgia, 'Times New Roman', serif; }
+.sans { font-family: Arial, Helvetica, sans-serif; }
+.mono { font-family: 'Courier New', Courier, monospace; }
+.size-weight { font-size: 22px; font-weight: 700; }
+.style-variant { font-style: italic; letter-spacing: 1px; }

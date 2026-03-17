@@ -1,0 +1,10 @@
+/*
+Tutorial File: tutorial_css/css/float.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.float-left { float: left; width: 180px; margin: 0 14px 10px 0; border: 2px solid #999; }
+.clear-box { clear: both; margin-top: 14px; padding: 10px; background: #f8f9fa; border: 1px solid #ccc; }

@@ -1,0 +1,19 @@
+/*
+Tutorial File: tutorial_css/css/pagination.css
+Purpose: CSS styling rules for course examples.
+Notes: Edit one property at a time and refresh browser to observe changes.
+*/
+
+
+body { font-family: Arial, sans-serif; padding: 20px; }
+.pagination a {
+    color: #0d6efd;
+    float: left;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    margin-right: 4px;
+}
+.pagination a.active { background: #0d6efd; color: #fff; border-color: #0d6efd; }
+.pagination a:hover:not(.active) { background: #e9ecef; }
+.pagination::after { content: ''; display: block; clear: both; }
